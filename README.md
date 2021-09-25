@@ -4,8 +4,7 @@ number resolution API of PayStack.
 
 Quick start
 -----------
-1. Create Virtualenv with python3.9 (the code should also work with 3.6, 3.7, 3.8 
-currently):
+1. Create Virtualenv with `Python` `3.9` (the current code should also work with `3.6`, `3.7`, `3.8`):
 
 ```shell
     virtualenv venv --python=python3.9
@@ -29,7 +28,7 @@ currently):
    python manage.py migrate
 ```
 
-5. Run the dev server:
+5. Launch the dev server:
 
 ```shell
    python manage.py runserver 127.0.0.1:8000
@@ -109,7 +108,7 @@ curl --request POST \
 ```
 This should return `{"accountName":"Joan Do"}`
 
-#### From paystack since not existing in db
+#### From paystack if not existing in db
 To ensure the account name does not exist in the db, we can test with the other user 
 populated in the database, so you can generate a token for username:bankai,password:bankai
 and make the query to retrieve account with the token obtained. You should get 
@@ -117,6 +116,8 @@ and make the query to retrieve account with the token obtained. You should get
 the paystack api.
 
 
+Damerau–Levenshtein vs Levenshtein
+-----------
 * What's a good reason why the pure Levenshtein Distance algorithm might be a more 
 effective solution than the broader Damerau–Levenshtein Distance algorithm in this 
 specific scenario ?
